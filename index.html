@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>yashalava — техника, которая не отвлекает</title>
+  <meta name="description" content="yashalava — лаконичные гаджеты для жизни и работы.">
+  <link rel="preload" href="assets/hero.mp4" as="video" type="video/mp4">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="promo" role="note">
+    Бесплатная доставка при предзаказе серии <strong>Y One</strong>. <a href="#store">Сделать предзаказ →</a>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="На главную">
+      <img src="assets/logo.svg" alt="" class="logo" />
+      <span>yashalava</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Главная навигация">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-icon"></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="#products">Продукты</a></li>
+        <li><a href="#why">Почему мы</a></li>
+        <li><a href="#store">Магазин</a></li>
+        <li><a href="#support">Поддержка</a></li>
+      </ul>
+      <div class="actions">
+        <button id="themeToggle" class="ghost" aria-label="Переключить тему">🌓</button>
+        <a class="pill" href="#store">Купить</a>
+      </div>
+    </nav>
+
+    <nav id="mobile-menu" class="mobile-drawer" hidden>
+      <a href="#products">Продукты</a>
+      <a href="#why">Почему мы</a>
+      <a href="#store">Магазин</a>
+      <a href="#support">Поддержка</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-media">
+      <video class="hero-video" autoplay muted playsinline loop poster="assets/hero.jpg">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-copy">
+      <h1>yashalava Y&nbsp;One</h1>
+      <p>Мощь, тишина, целый день работы. Ничего лишнего.</p>
+      <div class="cta">
+        <a class="pill" href="#store">Купить</a>
+        <a class="link" href="#products">Смотреть презентацию →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="section products">
+    <h2>Линейка Y</h2>
+    <div class="grid">
+      <article class="card reveal">
+        <img src="assets/prod1.png" alt="yashalava Y One — смартфон" />
+        <div class="card-body">
+          <h3>Y One</h3>
+          <p>Компактный флагман с чипом Y-Fusion и камерой 48&nbsp;МП.</p>
+          <div class="meta">
+            <span>от 699&nbsp;$</span>
+            <a class="link" href="#store">Подробнее →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card reveal delay-1">
+        <img src="assets/prod2.png" alt="yashalava Y Book — ноутбук" />
+        <div class="card-body">
+          <h3>Y Book</h3>
+          <p>Тонкий ноутбук на Y-Fusion Pro. 18&nbsp;часов без розетки.</p>
+          <div class="meta">
+            <span>от 1199&nbsp;$</span>
+            <a class="link" href="#store">Подробнее →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card reveal delay-2">
+        <img src="assets/prod3.png" alt="yashalava Y Buds — наушники" />
+        <div class="card-body">
+          <h3>Y Buds</h3>
+          <p>Сверхлёгкие TWS с активным шумоподавлением до 45&nbsp;дБ.</p>
+          <div class="meta">
+            <span>от 149&nbsp;$</span>
+            <a class="link" href="#store">Подробнее →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="why" class="section why">
+    <h2>Почему yashalava</h2>
+    <ul class="reasons">
+      <li class="reveal"><h4>Дизайн без шума</h4><p>Интерфейсы и материалы, которые исчезают из внимания.</p></li>
+      <li class="reveal delay-1"><h4>Производительность</h4><p>Собственные чипы Y-Fusion на 3-нм техпроцессе.</p></li>
+      <li class="reveal delay-2"><h4>Экосистема</h4><p>Устройства работают как единое целое — из коробки.</p></li>
+      <li class="reveal delay-3"><h4>Забота о плане&shy;те</h4><p>Переработанный алюминий и чистая энергетика.</p></li>
+    </ul>
+  </section>
+
+  <section id="store" class="section store">
+    <h2>Предзаказ открыт</h2>
+    <form class="preorder" action="#" onsubmit="return false">
+      <label class="field">
+        <span>Э-почта</span>
+        <input type="email" placeholder="you@domain.com" required />
+      </label>
+      <label class="field">
+        <span>Выберите продукт</span>
+        <select required>
+          <option value="">—</option>
+          <option>Y One</option>
+          <option>Y Book</option>
+          <option>Y Buds</option>
+        </select>
+      </label>
+      <button class="pill">Уведомить меня</button>
+      <p class="fine">Нажимая, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+    </form>
+  </section>
+
+  <footer id="support" class="site-footer">
+    <div class="cols">
+      <div>
+        <h4>Поддержка</h4>
+        <ul>
+          <li><a href="#">Статус заказа</a></li>
+          <li><a href="#">Сервисные центры</a></li>
+          <li><a href="#">Гарантия</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Пресса</a></li>
+          <li><a href="#">Вакансии</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Юридическое</h4>
+        <ul>
+          <li><a href="#">Условия</a></li>
+          <li><a href="#">Конфиденциальность</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footnote">
+      <small>© <span id="year"></span> yashalava. Сделано с любовью.</small>
+    </div>
+  </footer>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-chevron" viewBox="0 0 24 24">
+      <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/>
+    </symbol>
+  </svg>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
